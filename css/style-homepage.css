@@ -1,0 +1,229 @@
+:root {
+    --color-primary: #1d52ff;
+    --color-secondary:#ffffff;
+    --color-tertiary: #8b8b8b;
+
+    }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.homepage {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-secondary);
+   
+}
+
+
+.header-1 {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: right;
+    background-color: black;
+    box-shadow: 0 0 30px black;
+    top: 0;
+    width: 100%;
+    padding: 0 20px;
+
+}
+
+.logo{
+    padding:10px;
+    color: white;
+}
+
+.header-1 .logo span:first-child {
+    letter-spacing: -3px;
+    color:var(--color-primary);
+    margin-left: 5px;
+}
+
+.header-1 .logo span:last-child {
+    font-size: 12px;
+    letter-spacing: normal
+  
+}
+
+.redes-sociais{
+
+}
+
+.busca {
+    text-align: center;
+}
+
+.busca input {
+    background-image: url('../img/search.png');
+    background-repeat: no-repeat;
+    background-position: 96%;   
+    height: 20px;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid var(--color-tertiary);
+}
+
+.busca input:focus {
+    outline:none;  
+}
+
+.redes-sociais ul li {
+
+    margin-left: 18px;
+    display: inline-block;
+    float: left;
+    list-style: none;
+}
+
+.header-2 {
+    padding-top: 40px;
+    
+}
+
+.header-2 .navbar{ 
+    text-align: center;
+}
+
+
+.header-2 .navbar ul li {
+    display:inline-block;
+    margin-left: 18px;
+    height: 50px;
+}
+
+.navbar ul li a:hover{
+    color:var(--color-primary);
+    
+}
+
+.navbar ul li:hover{
+border-bottom: 3px solid var(--color-primary);
+}
+
+/*li:nth-child(4) {
+    pointer-events: none;
+}*/
+
+.navbar ul li a {
+    color: var(--color-tertiary);
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+
+.col-100{
+    width:100%;
+    float:left;
+    position: relative;
+}
+
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 9;
+    top: 46%;
+    left: 15%;
+    background-image: url('../img/flechaE.png');
+    cursor: pointer;
+}
+
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 9;
+    top: 46%;
+    right: 15%;
+    background-image: url('../img/flechaD.png');
+    cursor: pointer;
+}
+
+
+.slick-dots li button {
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    font-size: 0px;
+    cursor: pointer;
+    height: 26px;
+    width: 26px;
+} 
+ul.slick-dots li.slick-active {
+    background-color:var(--color-primary);
+    border-radius: 50%;  
+    width: fit-content;
+    height: fit-content; 
+}
+
+/*ul.slick-dots li {
+    display: inline-block;
+    font-size: 0px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    margin-left:30px;
+}*/
+
+li.slick-active button {
+    background: var(--color-primary);    
+}
+
+
+
+.slick-dots li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.slick-dots {
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 600px;
+}
+
+.slick-initialized {
+    overflow: hidden; /* arrumar do scroll */
+}
+
+
+.content {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/curso-eng-comp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn {
+    background-image: linear-gradient(to right, #24207f, rgb(78, 78, 221));
+    border-radius: 30px;
+    width: 10%;
+    color: #ccc;
+    padding: 15px;
+    border: 0px;
+    outline: 0;
+    margin-top: 5px;
+
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right, #24207f, rgb(27, 27, 150));
+}
